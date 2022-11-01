@@ -74,7 +74,7 @@ services:
       - database
       - redis
   database:
-    image: 'postgres' # use latest official postgres version
+    image: 'postgres:14' # use official postgres version 14
     restart: unless-stopped
     networks:
       rafiki:
